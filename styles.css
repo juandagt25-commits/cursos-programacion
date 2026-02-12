@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -641,4 +642,29 @@ input.success-input {
 .btn-top:hover {
   background: #1e40af;
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+  }
+
 }
